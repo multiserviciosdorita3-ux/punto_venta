@@ -1,126 +1,86 @@
 <!DOCTYPE html>
-<!-- saved from url=(0029)http://localhost/punto_venta/ -->
-<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>MARELI - Punto de Venta</title>
 
-<title>Punto de Venta E.M</title>
+    <!-- ESTILOS -->
+    <style>
+        /* RESET */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-<style>
-body{
-    margin:0;
-    font-family: Arial, sans-serif;
-    height:100vh;
-    display:flex;
-}
+        /* FONDO GENERAL */
+        body {
+            height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #FFD700, #FF4500);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-/* Fondo mitad verde mitad rosa */
-.fondo-verde{
-    width:50%;
-    background: linear-gradient(#b7e4c7, #52b788);
-}
+        /* CONTENEDOR CENTRAL */
+        .contenedor {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 50px;
+            border-radius: 25px;
+            text-align: center;
+            box-shadow: 0 20px 45px rgba(0,0,0,0.3);
+            backdrop-filter: blur(8px);
+            width: 420px;
+        }
 
-.fondo-rosa{
-    width:50%;
-    background: linear-gradient(#ffd6e0, #ff8fab);
-}
+        /* LOGO TEXTO */
+        .logo-mareli {
+            font-size: 64px;
+            font-weight: bold;
+            letter-spacing: 8px;
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
 
-/* Caja login */
-.login{
-    width:320px;
-    background:white;
-    padding:25px;
-    border-radius:18px;
-    text-align:center;
-    box-shadow:0 0 20px rgba(0,0,0,0.3);
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%, -50%);
-}
+        /* TEXTO BIENVENIDA */
+        .bienvenida {
+            font-size: 22px;
+            color: #ffffff;
+            margin-bottom: 30px;
+        }
 
-/* Logo */
-.logo{
-    font-size:56px;
-    font-weight:bold;
-    color:#2d6a4f;
-    letter-spacing:3px;
-    margin-bottom:5px;
-}
+        /* BOTÓN */
+        .btn {
+            background: linear-gradient(135deg, #FFB703, #FF0000);
+            border: none;
+            padding: 14px 40px;
+            border-radius: 30px;
+            color: #fff;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+        }
 
-/* Subtítulo */
-.sub{
-    color:#40916c;
-    font-size:14px;
-    margin-bottom:15px;
-}
-
-/* Abejitas */
-.bee{
-    font-size:24px;
-    position:absolute;
-}
-.bee1{ top:-15px; left:-15px; }
-.bee2{ top:-15px; right:-15px; }
-.bee3{ bottom:-15px; left:-15px; }
-.bee4{ bottom:-15px; right:-15px; }
-
-/* Inputs */
-input{
-    width:100%;
-    padding:10px;
-    margin:10px 0;
-    border-radius:6px;
-    border:1px solid #ccc;
-}
-
-/* Botón */
-button{
-    width:100%;
-    padding:10px;
-    background:#2d6a4f;
-    color:white;
-    border:none;
-    border-radius:6px;
-    font-size:16px;
-    cursor:pointer;
-}
-button:hover{
-    background:#1b4332;
-}
-
-/* Error */
-.error{
-    color:red;
-    font-size:14px;
-}
-</style>
-
+        .btn:hover {
+            opacity: 0.9;
+        }
+    </style>
 </head>
+
 <body>
 
-<div class="fondo-verde"></div>
-<div class="fondo-rosa"></div>
+    <div class="contenedor">
 
-<div class="login">
+        <div class="logo-mareli">MARELI</div>
 
-    <!-- Abejitas -->
-    <div class="bee bee1">🐝</div>
-    <div class="bee bee2">🐝</div>
-    <div class="bee bee3">🐝</div>
-    <div class="bee bee4">🐝</div>
+        <div class="bienvenida">
+            Holaa, bienvenido a tu sitio favorito
+        </div>
 
-    <!-- Logo -->
-    <div class="logo">E.M</div>
-    <div class="sub">Punto de Venta JIT-CMD</div>
+        <button class="btn">Ingresar</button>
 
-    
-    <form method="POST">
-        <input type="text" name="usuario" placeholder="Usuario" required="">
-        <input type="password" name="password" placeholder="Contraseña" required="">
-        <button type="submit">Ingresar</button>
-    </form>
+    </div>
 
-</div>
-
-
-
-</body></html>
+</body>
+</html>
